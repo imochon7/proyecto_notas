@@ -1,0 +1,53 @@
+<form accion="index.php?ruta=usuario&accion=doedit" id="formularioEditar" class="formularioEditar">
+    
+    <input type="hidden" name="ruta" value="usuario">
+    <input type="hidden" name="accion" value="doedit">
+    
+    <input type="hidden" name="passwordpk" value="{password}">
+    <input type="hidden" name="idpk" value="{id}">
+    <input type="hidden" id="emailpk" name="emailpk" value="{correo}">
+    <input type="hidden" id="aliaspk" name="aliaspk" value="{alias}">
+    
+    <h1>EDITAR PERFIL</h1>
+    
+    <div class="campos-input">
+        <div class="grupo-input">
+            <label for="emailEdit">Correo electrónico:</label>
+            <input type="email" id="emailEdit" name="email" class="validate" value="{correo}" placeholder="Correo electrónico" />
+            <span class="mensaje"></span>
+        </div>
+        
+        <div class="grupo-input">
+            <label for="aliasEdit">Usuario:</label>
+            <input type="text" id="aliasEdit" name="alias" class="validate" value="{alias}" placeholder="Alias" />
+            <span class="mensaje"></span>
+        </div>
+        
+        <div class="grupo-input">
+            <label for="passwordOld">Contraseña:</label>
+            <input type="password" id="passwordOld" name="oldpassword" class="validate" placeholder="Introduce la contraseña actual" required />
+            <span class="mensaje"></span>
+        </div>
+        
+        <div class="grupo-input">
+            <label for="passwordNew">Nueva contraseña:</label>
+            <input type="password" id="passwordNew" name="password" class="validate" placeholder="Introduce la nueva contraseña" />
+            <span class="mensaje"></span>
+        </div>
+        
+        <div class="grupo-input">
+            <label for="passwordReNew">Confirmar contraseña:</label>
+            <input type="password" id="passwordReNew" name="password2" class="validate" placeholder="Repite la nueva contraseña" />
+            <span class="mensaje"></span>
+        </div>
+    </div>    
+    
+    <div class="campos-btn">
+        <input type="button" id="btn-eliminar-editar" class="btn-eliminar" value="ELIMINAR" onclick="location.href='index.php?ruta=usuario&accion=destroyuser&id={id}';">
+        <!-- Onclick está para mantener un input y que haga un href a la vez -->
+        <input type="button" id="btn-cancelar-editar" class="btn-cancelar" value="CANCELAR" onclick="location.href='index.php?ruta=nota&accion=viewnotas';">
+        <!-- El input del submit no hace nada con esa clase y ese id ¿? -->
+        <input type="submit" value="GUARDAR" class="edit-submit">
+        <span class="mensaje"></span>
+    </div>                    
+</form>

@@ -1,0 +1,46 @@
+<form action="" method="post" id="formularioEditar">
+    
+        <input type="hidden" name="ruta" value="usuario">
+        <input type="hidden" name="accion" value="doedit">
+        <input type="hidden" name="passwordpk" value="{password}">
+        <input type="hidden" name="idpk" value="{id}">
+        <input type="hidden" id="emailpk" name="emailpk" value="{correo}">
+        <input type="hidden" id="aliaspk" name="aliaspk" value="{alias}">
+        <input type="hidden" id="listaEmails" name="listaEmails" value="{listaEmails}">
+        <input type="hidden" id="listaAlias" name="listaAlias" value="{listaAlias}">
+        
+        <div class="modal-content">
+            <div class="input-field">
+                <i class="material-icons prefix">account_circle</i>
+                <input id="emailEdit" type="email" name="email" class="validate" value="{correo}" />
+                <label for="emailEdit">Correo electrónico</label>
+            </div>
+            <div class="input-field">
+                <i class="material-icons prefix">account_circle</i>
+                <input id="aliasEdit" type="text" name="alias" class="validate" value="{alias}" />
+                <label for="aliasEdit">Alias</label>
+            </div>
+            <div class="input-field">
+                <i class="material-icons prefix">lock</i>
+                <input required id="passwordOld" type="password" name="oldpassword" class="validate">
+                <label for="passwordOld">Antigua Clave de acceso</label>
+            </div>
+            <div class="input-field">
+                <i class="material-icons prefix">lock</i>
+                <input id="passwordNew" type="password" name="password" class="validate">
+                <label for="passwordNew">Nueva Clave de acceso</label>
+            </div>
+            <div class="input-field">
+                <i class="material-icons prefix">lock</i >
+                <input id="passwordReNew" type="password" name="password2" class="validate">
+                <label for="passwordReNew">Repita Clave de acceso</label>
+            </div>
+        </div>
+        
+        {error}
+
+        <div class="modal-footer">
+            <input type="submit" class="modal-action waves-effect waves-green btn-flat enviarEditar" value="GUARDAR">
+            <a href="index.php?ruta=nota&accion=viewnotas" class="modal-action modal-close waves-effect waves-green btn-flat ">CANCELAR</a>
+        </div>
+    </form>

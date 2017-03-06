@@ -1,0 +1,38 @@
+<div id="vRegistro" class="">
+    <form action="" method="post" id="formularioRegistro">
+        <input type="hidden" name="ruta" value="usuario">
+        <input type="hidden" name="accion" value="doinsert">
+        <input type="hidden" id="listaEmails" name="listaEmails" value="{listaEmails}">
+        <input type="hidden" id="listaAlias" name="listaAlias" value="{listaAlias}">
+        
+        <div class="modal-content">
+            <h4>Registro</h4>
+            <div class="input-field">
+                <i class="material-icons prefix">account_circle</i>
+                <input required id="emailReg" type="email" name="email" class="validate" title="El email debe tener el siguiente formato: nombre@dominio.es">
+                <label for="emailReg">Correo electrónico</label>
+                <span class="error"></span>
+            </div>
+            <div class="input-field">
+                <i class="material-icons prefix">account_circle</i>
+                <input required id="aliasReg" type="text" name="alias" class="validate">
+                <label for="aliasReg">Alias</label>
+            </div>
+            <div class="input-field">
+                <i class="material-icons prefix">lock</i>
+                <input required id="passwordReg" type="password" name="password" title="La contraseña debe tener como mínimo 6 caracteres, incluyendo letras, números y mayúsculas">
+                <label for="passwordReg">Clave de acceso</label>
+            </div>
+            <div class="input-field">
+                <i class="material-icons prefix">lock</i>
+                <input required id="passwordRepReg" type="password" name="password2">
+                <label for="passwordRepReg">Repite la clave de acceso</label>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="index.php" class="modal-action modal-close waves-effect waves-green btn-flat ">Cerrar</a>
+            <input type="reset" class="waves-effect waves-green btn-flat Limpiar" value="Limpiar">
+            <input type="submit" class="waves-effect waves-green btn-flat enviarRegistrar" value="Registrarse">
+        </div>
+    </form>
+</div>

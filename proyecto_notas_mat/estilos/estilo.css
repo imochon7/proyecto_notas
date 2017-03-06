@@ -1,0 +1,10 @@
+@charset "UTF-8";
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+a:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: #959595;
+}

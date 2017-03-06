@@ -1,0 +1,25 @@
+>> JQuery
+
+var f = document.getElementById('formAddActividad');
+var formData = new FormData(f);
+var archivo = document.getElementById("fileactividad");
+formData.append('archivo', archivo.files[0]);
+
+$.ajax({
+    url: 'subir.php',
+    data: formData,
+    type: 'POST',
+    contentType: false,
+    processData: false
+});
+
+
+>> SUBIR.PHP
+
+<?php
+$uploads_dir = '../imagenesActividades';
+$name = $_FILES['archivo']['name'];
+
+$loc = $uploads_dir . '/' . $name;
+
+move_uploaded_file($_FILES["archivo"]["tmp_name"], $loc);

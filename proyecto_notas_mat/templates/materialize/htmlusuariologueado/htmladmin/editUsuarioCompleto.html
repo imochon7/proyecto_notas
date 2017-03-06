@@ -1,0 +1,52 @@
+<form action="" method="post" id="formularioEditarCompleto">
+        <input type="hidden" name="ruta" value="usuario">
+        <input type="hidden" name="accion" value="doedit">
+        <input type="hidden" name="idpk" value="{idpk}">
+        <input type="hidden" name="tipopk" value="{tipopk}">
+        
+        <div class="modal-content">
+            <div class="input-field">
+                <i class="material-icons prefix">account_circle</i>
+                <input id="emailEditComp" type="email" name="emailE" class="validate" value="{emailpk}" />
+                <label for="emailEditComp">Correo electrónico</label>
+            </div>
+            <div class="input-field">
+                <i class="material-icons prefix">lock</i>
+                <input required id="passwordEditComp" type="password" name="password" class="validate" value="">
+                <label for="passwordEditComp">Clave de Acceso</label>
+            </div>
+            <div class="input-field">
+                <i class="material-icons prefix">account_circle</i>
+                <input id="aliasEditComp" type="text" name="alias" class="validate" value="{aliaspk}" />
+                <label for="aliasEditComp">Alias</label>
+            </div>
+            <div class="input-field">
+                <i class="material-icons prefix">account_circle</i>
+                <input id="falta" type="text" name="falta" class="validate" value="{faltapk}" />
+                <label for="falta">Falta</label>
+            </div>
+            
+            <div>
+                <label>Tipo</label>
+                
+                <select class="browser-default" id="tipousuario" name="{tipopk}">
+                    <option value="selecionado" selected>{tipopk}</option>
+                    <option <?php if ($tipopk == 'usuario') { echo 'selected="selected"'; } ?>usuario</option>
+                    <option <?php if ($tipopk == 'administrador') { echo 'selected="selected"'; } ?>administrador</option>
+                </select>
+            </div>
+            <div>
+                <label>Estado</label>
+                <select class="browser-default" name="tipoUsuario">
+                    <option value="selecionado" selected>{estado}</option>
+                    <option value="1">Activo</option>
+                    <option value="0">Inactivo</option>
+                </select>
+            </div>
+        </div>
+        <br/><br/>
+        <div class="modal-footer">
+            <input type="submit" class="modal-action waves-effect waves-green btn-flat enviarEditarCompleto" value="Guardar">
+            <a href="index.php?ruta=nota&accion=doinsert" class="modal-action modal-close waves-effect waves-green btn-flat ">Cancelar</a>
+        </div>
+    </form>

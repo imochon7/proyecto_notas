@@ -1,0 +1,50 @@
+<!-- Para editar, cambiar clase div-nota por div-nota-editar -->
+<div class="div-nota">
+    <form class="form-nota" method="post" enctype="multipart/form-data">
+        <a href="#" class="deletebtn"><img src="img/delete.png"></a>
+        <span class="titulo-nota" name="titulo-nota" contenteditable="true">Titulo nota</span>
+        </br></br>
+        <span class="contenido-nota" name="contenido-nota" contenteditable="true">Contenido nota</span>
+        <!-- Para editar, cambiar clase menu-editar-oculto por menu-editar -->
+        <div id="menu-nota" class="menu-editar oculto">
+            <!-- Tipografia -->
+            <label>Tipografia</label>
+            <select class="sel-tipo" name="sel-tipo">
+                <option value="1" selected>Calibri</option>
+                <option value="2">Cambria</option>
+                <option value="3">Raleway</option>
+                <option value="4">Satellite</option>   
+            </select>
+            <!-- Compartir -->
+            <label for="sel-comp">Compartir</label>
+            <select class="sel-comp" name="sel-comp">
+                <option value="privado" selected>Privado</option>
+                <option value="publico">Publico</option>
+            </select>
+            <!-- Tamaño de letra -->
+            <label for="sel-tama">Tamaño</label>
+            <select class="sel-tama" name="sel-tama">
+                <option value="1" selected>12</option>
+                <option value="2">14</option>
+                <option value="3">16</option>
+                <option value="4">18</option>
+                <option value="5">24</option>
+            </select>
+           <!-- Color de nota -->
+            <label for="sel-color">Color</label>
+            <select class="sel-color" name="sel-color">
+                <option value="1" selected>Amarillo</option>
+                <option value="2">Rosa</option>
+                <option value="3">Azul</option>
+                <option value="4">Verde</option>
+            </select>
+            <!-- Input file personalizado -->
+            <input type="file" name="file" id="file" class="inputfile" data-multiple-caption="{count} archivos" multiple />
+            <label for="file"><span>Subir archivo</span></label>
+            <!-- Submit -->
+            <div class="div-submit">
+                <input type="submit" id="btn-submit-nota" class="btn-submit-nota" value="HECHO">
+            </div>
+        </div>
+    </form>
+</div>

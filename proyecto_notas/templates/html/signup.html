@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <link rel="icon" href="/proyecto_notas/templates/img/favicon.png" sizes="32x32">
+    <meta property="og:site_name" content="desarrollo, development, software, aplicaciones, web" />
+    <meta property="og:description" content="desarrollo, development, software, aplicaciones, web" />
+    <meta name="keywords" content="desarrollo, development, software, aplicaciones, web" />
+    <meta name="description" content="desarrollo, development, software, aplicaciones, web" />
+    <meta name="robots" content="index,follow, all" />
+    <meta name="author" content="MIM" />
+
+
+    <title>MIMSoft</title>
+    <link type="text/css" href="../css/reset.css" rel="stylesheet"/>
+    <link type="text/css" href="../css/style-register.css" rel="stylesheet" media="screen, projection"/>
+    <script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="../js/validar-registro.js" defer></script>
+
+</head>
+
+<!-- CSS -->
+
+
+<body>
+    
+        <header id="cabecero">
+            <div id="izq"><a href="/proyecto_notas/index.php"><h1 id="nombreempresa">mimsoft</h1></a></div>
+            <div id="der">
+                <ul id="listasocialmedia">
+                     <li><a id="access" href="/proyecto_notas/templates/html/login.html">access</a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </div>
+    </header>
+    
+    <div id="contenedorflex">
+    <div class='form animated flipInX'>
+        <h2>Sign Up</h2>
+
+        <form id="signup" action="https://proyecto-notas-montselop.c9users.io/proyecto_notas/index.php">
+            
+            <input type="hidden" name="ruta" value="usuario2">
+            <input type="hidden" name="accion" value="doinsert">
+            
+            <input type="text" name="email" id="email" value="" placeholder="email" tabindex="10" />
+            <span></span>
+            <input type="text" name="alias" id="alias" value="" placeholder="Nombre" tabindex="10" />
+            <span></span>
+            <input type="password" name="password" id="pass" value="" placeholder="contraseña" tabindex="10" />
+            <span></span>
+            <input type="password" name="password2" id="pass2" value="" placeholder="repite contraseña" tabindex="10" />
+            <span></span>
+            <div class="inputs">
+                <input type="submit" id="signup_enviar" value="sign up" class='animated infinite pulse' />
+            </div>
+            <div id="errors-div">
+                <span id="error-msg"></span>
+            </div>
+        </form>
+    </div>
+    </div>
+
+    <!----------------------------------script------------------------------------->
+
+</body>
+
+</html>

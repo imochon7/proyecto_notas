@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta property="og:site_name" content="desarrollo, development, software, aplicaciones, web" />
+    <meta property="og:description" content="desarrollo, development, software, aplicaciones, web" />
+    <meta name="keywords" content="desarrollo, development, software, aplicaciones, web" />
+    <meta name="description" content="desarrollo, development, software, aplicaciones, web" />
+    <meta name="robots" content="index,follow, all" />
+    <meta name="author" content="MIM" />
+
+
+    <title>MIMSoft</title>
+    <link type="text/css" href="../css/reset.css" rel="stylesheet"/>
+    <link type="text/css" href="../css/style-register.css" rel="stylesheet" media="screen, projection"/>
+
+</head>
+
+<!-- CSS -->
+
+
+<body>
+    
+        <header id="cabecero">
+            <div id="izq"><a href="#"><h1 id="nombreempresa">mimsoft</h1></a></div>
+            <div id="der">
+                <ul id="listasocialmedia">
+                    <li><a id="access" href="#">access</a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </div>
+    </header>
+    
+    <div id="contenedorflex">
+    <div class='form animated flipInX'>
+        <h2>Sign Up</h2>
+
+        <form id="signup" method="POST" action="">
+            <input type="hidden" name="ruta" value="usuario">
+            <input type="hidden" name="accion" value="doinsert">
+            <input type="hidden" id="listaEmails" name="listaEmails" value="{listaEmails}">
+            <input type="hidden" id="listaAlias" name="listaAlias" value="{listaAlias}">
+            
+            <input type="text" name="email" id="email" value="" placeholder="email" tabindex="10" />
+            <input type="text" name="nombre" id="alias" value="" placeholder="Nombre" tabindex="10" />
+            <input type="password" name="pass" id="pass" value="" placeholder="contraseña" tabindex="10" />
+            <input type="password" name="pass2" id="pass2" value="" placeholder="pass" tabindex="10" />
+            <div class="inputs">
+                <input type="submit" id="submit" value="login" class='animated infinite pulse' />
+            </div>
+            <div class="errors">
+                <span id="#error-msg"></span>
+            </div>
+        </form>
+    </div>
+    </div>
+
+    <!----------------------------------script------------------------------------->
+
+</body>
+
+</html>

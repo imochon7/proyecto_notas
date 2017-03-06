@@ -1,0 +1,64 @@
+<form action="" method="post" id="formularioNota">
+    <input type="hidden" name="ruta" value="nota">
+    <input type="hidden" name="accion" value="doedit">
+    <input type="hidden" name="id" value={id}>
+    
+    <div class="modal-content">
+        <label>Titulo</label>
+        <input type="text" name="titulo" value="{titulo}" />
+        
+        <label>Nota</label>
+        <textarea id="textarea" rows="10" cols="70">{texto}</textarea>
+        
+        <br/>
+        
+        <div>
+            <div style="width:150px; display:inline-block">
+                <label>Tipografias</label>
+                <select class="browser-default" name="tipografia">
+                    <option value="1" selected>Calibri</option>
+                    <option value="2">Cambria</option>
+                    <option value="3">Raleway</option>
+                    <option value="4">Satellite</option>
+                </select>
+            </div>
+            
+            <div style="width:150px; display:inline-block">
+                <label>Compartir</label>
+                <select class="browser-default" name="privacidad" >
+                    <option value="false" selected>Privado</option>
+                    <option value="true">Publico</option>
+                </select>
+            </div>
+                
+            <div style="width:150px; display:inline-block">
+                <label>Tamaño Letra</label>
+                <select class="browser-default" name="tamaño">
+                    <option value="1" selected>12</option>
+                    <option value="2">14</option>
+                    <option value="3">16</option>
+                    <option value="4">18</option>
+                    <option value="5">24</option>
+                </select>
+            </div>
+                
+            <div style="width:150px; display:inline-block">
+                <label>Color</label>
+                <input name="color" type="color" value="#FDFD96" />
+            </div>
+        
+            <div style="width:150px; display:inline-block">
+                <span>File</span>
+                <input type="file">
+            </div>
+            
+            <br/>
+                
+            <input type="submit" class="modal-action btn waves-green btn-flat col s12" value="HECHO">
+                        
+        </div>
+        
+    </div>
+    
+    
+</form>

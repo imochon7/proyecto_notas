@@ -1,0 +1,52 @@
+<form action="" method="post" id="formularioEditar">
+    
+    <input type="hidden" name="ruta" value="usuario">
+    <input type="hidden" name="accion" value="doedit">
+    <input type="hidden" name="passwordpk" value="{password}">
+    <input type="hidden" name="idpk" value="{id}">
+    <input type="hidden" id="emailpk" name="emailpk" value="{correo}">
+    <input type="hidden" id="aliaspk" name="aliaspk" value="{alias}">
+    <input type="hidden" id="listaEmails" name="listaEmails" value="{listaEmails}">
+    <input type="hidden" id="listaAlias" name="listaAlias" value="{listaAlias}">
+    
+    <h1>EDITAR PERFIL</h1>
+    
+    <div class="campos-input">
+        <div class="grupo-input">
+            <label for="emailEdit">Correo electrónico:</label>
+            <input type="email" id="emailEdit" name="email" class="validate" value="{correo}" placeholder="Correo electrónico" />
+            <span class="mensaje"></span>
+        </div>
+        
+        <div class="grupo-input">
+            <label for="aliasEdit">Usuario:</label>
+            <input type="text" id="aliasEdit" name="alias" class="validate" value="{alias}" placeholder="Alias" />
+            <span class="mensaje"></span>
+        </div>
+        
+        <div class="grupo-input">
+            <label for="passwordOld">Contraseña:</label>
+            <input type="password" id="passwordOld" name="oldpassword" class="validate" placeholder="Introduce la contraseña actual" required />
+            <span class="mensaje"></span>
+        </div>
+        
+        <div class="grupo-input">
+            <label for="passwordNew">Nueva contraseña:</label>
+            <input type="password" id="passwordNew" name="newpassword" class="validate" placeholder="Introduce la nueva contraseña" />
+            <span class="mensaje"></span>
+        </div>
+        
+            
+        <div class="grupo-input">
+            <label for="passwordReNew">Confirmar contraseña:</label>
+            <input type="password" id="passwordReNew" name="password2" class="validate" placeholder="Repite la nueva contraseña" />
+            <span class="mensaje"></span>
+        </div>
+    </div>    
+        
+    <div class="campos-btn">
+        <input type="button" id="btn-cancelar-editar" class="btn-cancelar" value="CANCELAR">
+        <input type="submit" id="btn-submit-editar" class="btn-submit" value="GUARDAR">
+        <span class="mensaje"></span>
+    </div>                    
+</form>

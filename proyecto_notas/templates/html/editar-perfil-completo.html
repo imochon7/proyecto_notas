@@ -1,0 +1,49 @@
+<form accion="index.php?ruta=usuario&accion=doedit" id="formularioEditarCompleto" class="formularioEditar">
+    
+    <input type="hidden" name="ruta" value="usuario">
+    <input type="hidden" name="accion" value="doeditcompl">
+    
+    <input type="hidden" name="id" value="{id}">
+    <input type="hidden" id="emailpk" name="emailpk" value="{correo}">
+    <input type="hidden" id="aliaspk" name="aliaspk" value="{alias}">
+    
+    <h1>EDITAR PERFIL</h1>
+    
+    <div class="campos-input">
+        <div class="grupo-input">
+            <label for="emailEdit">Correo electrónico:</label>
+            <input type="email" id="emailEdit" name="email" class="validate" value="{correo}" placeholder="Correo electrónico" />
+            <span class="mensaje"></span>
+        </div>
+        
+        <div class="grupo-input">
+            <label for="aliasEdit">Usuario:</label>
+            <input type="text" id="aliasEdit" name="alias" class="validate" value="{alias}" placeholder="Alias" />
+            <span class="mensaje"></span>
+        </div>
+    </div>    
+    
+    <div class="campos-select">
+        
+        <label for="se-tipo">Tipo de usuario:</label>
+        <select class="se-tipo" name="tipo">
+            <option value="usuario">Usuario</option>
+            <option value="administrador">Administrador</option>
+        </select>
+        
+        <label for="se-estado">Estado:</label>
+        <select class="se-estado" name="estado">
+            <option value="1">Activado</option>
+            <option value="0">Inactivo</option>
+        </select>
+    
+    </div>
+    
+    <div class="campos-btn">
+        <!-- Onclick está para mantener un input y que haga un href a la vez -->
+        <input type="button" id="btn-cancelar-editar" class="btn-cancelar" value="CANCELAR" onclick="location.href='index.php?ruta=usuario&accion=viewlist';">
+        <!-- El input del submit no hace nada con esa clase y ese id ¿? -->
+        <input type="submit" value="GUARDAR" class="edit-completo">
+        <span class="mensaje"></span>
+    </div>                    
+</form>

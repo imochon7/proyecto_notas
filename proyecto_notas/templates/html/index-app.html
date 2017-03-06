@@ -1,0 +1,55 @@
+<!DOCTYPE hmtl>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="icon" href="/proyecto_notas/templates/img/favicon.png" sizes="32x32">
+        <link type="text/css" href="/proyecto_notas/templates/css/reset.css" rel="stylesheet"/>
+        <link type="text/css" href="/proyecto_notas/templates/css/style-notes.css" rel="stylesheet" media="screen, projection"/>        
+        <script src="/proyecto_notas/templates/js/jquery-3.1.1.min.js"></script>
+	    <script src="/proyecto_notas/templates/js/notes-script.js" defer></script>
+	    <script src="/proyecto_notas/templates/js/precarga.js" defer></script>
+        <title>MIMNotes</title>
+    </head>
+    <body>
+        <div class="contenedor">
+            <!-- Menu desplegable -->
+            <nav id="mySidenav" class="sidenav">
+                <a href="#" id="closebtn">Cerrar &times;</a>
+                <a href="?ruta=nota&accion=viewnotas"><h3>{aliasUsuario}</h3></a>
+                <hr/>
+                <a href="?ruta=usuario&accion=viewedit">Editar perfil</a>
+                <hr/>
+                <a href="?ruta=nota&accion=doinsert">Nota nueva</a>
+                <a href="#">Lista nueva</a>
+            </nav>
+            
+            <!-- Header -->
+            <header>
+                <div>
+                    <h1 id="sideMenu">MIMNotes</h1>
+                    {administrar}
+                    <h2><a href="?ruta=usuario&accion=logout">Cerrar sesión</a></h2>
+                </div> 
+            </header>
+            
+            <!-- Menu lateral fijo -->
+            <aside class="menu-lateral-fijo">
+                <img class="user-img" src="/proyecto_notas/templates/img/user.png" height="100" width="100">
+                <a href="?ruta=nota&accion=viewnotas"><h3>{aliasUsuario}</h3></a>
+                <hr/>
+                <a href="?ruta=usuario&accion=viewedit">Editar perfil</a>
+                <hr/>
+                <a href="?ruta=nota&accion=doinsert">Nota nueva</a>
+                <a href="?ruta=nota&accion=doinsertLista">Lista nueva</a>
+            </aside>
+            
+            <!-- Aqui se insertan las notas y el editar-usuario -->
+            <section class="espacio-main">
+                {contenido}
+            </section>
+        </div>
+        
+        
+    </body>
+</html>

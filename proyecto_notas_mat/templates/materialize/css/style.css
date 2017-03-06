@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+.brand-logo{        /* Etiqueta para nivelar el logo en el header */
+    top: 10px;
+}
+
+.light-blue.lighten-1 {        /* Intento de cambiar el color del nav */
+    background-color: #BED099 !important;
+}
+
+.tablaUsuarios table, th, td {
+    width: 100%;
+    border: 2px solid black;
+}
+
+.tablaNotas table, th, td {
+    width: 100%;
+    border: 2px solid black;
+}
+
+.ayudaLogin, .ayudaRegistro{
+    top: 10px;
+    color: red;
+    text-align: center;
+}
+
+.invalid input[type=email]{
+    border-bottom-color: red;
+}
+
+.invalid input[type=password]{
+    border-bottom-color: red;
+}
+
+.invalid input[type=text]{
+    border-bottom-color: red;
+}
+
+
+.valid input[type=email]{
+    border-bottom-color: green;
+}
+
+.valid input[type=password]{
+    border-bottom-color: green;
+}
+
+.valid input[type=text]{
+    border-bottom-color: green;
+}
+
+
+.notamenu{
+    display: none;
+    color: black;
+}
+
+.notamenu select{
+    width: 80px;
+}
+
+.notamenu input{
+    width: 80px;
+}
+
+.notamenu li{
+    width: 80px;
+}
+
+.divnota{
+    display: inline-block; 
+    margin: 5px; 
+    width: 300px; 
+    height: 300px; 
+    background-color: #FDFD96;
+}
+
+.divnota h5{
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+
+.imagenNota{
+    width: 250px;
+}
+
+.imagenNota img{
+    width: 100%;
+    overflow:hidden;
+}
